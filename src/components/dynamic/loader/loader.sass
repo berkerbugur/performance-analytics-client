@@ -1,0 +1,49 @@
+.loader
+  display: block
+  position: absolute
+  left: 0
+  right: 0
+  margin: auto 10px
+
+  .loader-logo
+    margin: 50px auto 50px auto
+
+  @media (prefers-reduced-motion: no-preference)
+    .loader-logo
+      animation: diagonal-rotate infinite 1s step-end
+      max-height: 200px
+      max-width: 200px
+
+  @keyframes diagonal-rotate
+    0%
+      -webkit-transform: rotate(0deg)
+    6.25%
+      -webkit-transform: rotate(0deg)
+    12.5%
+      -webkit-transform: rotate(45deg)
+    18.75%
+      -webkit-transform: rotate(45deg)
+    25%
+      -webkit-transform: rotate(90deg)
+    31.25%
+      -webkit-transform: rotate(90deg)
+    37.5%
+      -webkit-transform: rotate(135deg)
+    43.75%
+      -webkit-transform: rotate(135deg)
+    50%
+      -webkit-transform: rotate(180deg)
+    56.25%
+      -webkit-transform: rotate(180deg)
+    62.5%
+      -webkit-transform: rotate(225deg)
+    68.75%
+      -webkit-transform: rotate(225deg)
+    75%
+      -webkit-transform: rotate(270deg)
+    87.5%
+      -webkit-transform: rotate(270deg)
+    93.75%
+      -webkit-transform: rotate(315deg)
+    100%
+      -webkit-transform: rotate(315deg)
